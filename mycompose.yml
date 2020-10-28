@@ -1,0 +1,13 @@
+version: '3'
+services:
+  mydb:
+   image: mysql      
+   Environment variables:
+    - MYSQL_ROOT_PASSWORD: sivas      
+
+  mytomcat:
+   image: tomcat       
+   ports: 
+    - 8080:8080
+          
+
